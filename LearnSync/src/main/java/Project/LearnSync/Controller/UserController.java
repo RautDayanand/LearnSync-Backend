@@ -18,4 +18,10 @@ public class UserController {
     public User registerUser(@RequestBody User user) {
         return userRepository.save(user);
     }
+    
+    @PostMapping("/login")
+    public boolean findUser(@RequestBody User user) {
+    	return false;
+    }
+    
 }
